@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&family=Montserrat:wght@300&family=Mulish:wght@300&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: rgb(114, 227, 114);
+}
+.main-div{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-div h1{
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+}
+.clickCount{
+    color: #ee5253;
+}
+.inner-div img{
+    border-radius: 70px;
+      width: 50rem;
+      height: 50rem;
+      box-shadow: 0 1rem 2rem .8rem rgb(0, 0, 0, 0.3);
+      position: relative;
+}
+.inner-div i {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: red;
+animation: heartGrow 0.8s linear;
+-webkit-animation: heartGrow 0.8s linear;
+}
+
+@keyframes heartGrow{
+100%{
+    transform: scale(20);
+    opacity: 0;
+}
+}
